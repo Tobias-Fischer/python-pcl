@@ -38,7 +38,7 @@ cdef class Vertices:
         return "<Vertices of %d points>" % self.vertices.size()
 
     @cython.boundscheck(False)
-    def from_array(self, cnp.ndarray[cnp.int_t, ndim=1] arr not None):
+    def from_array(self, cnp.ndarray[cnp.int32_t, ndim=1] arr not None):
         """
         Fill this object from a 2D numpy array (float32)
         """
